@@ -14,37 +14,33 @@ if (! in_array(sane('auth'), $safety)) {
     die('<title>Denied</title><h1>Unauthorized Access</h1>');
 }
 
-$input = array ( 
-		"Roll" => sane('roll'),
-        "Name" => sane('name'),
-		"Email" => sane('email'),
-		"HostelAddr" => sane('addr'),
+$donor_array = array ( 
+		"CampId" => sane('cid'),
+                "Name" => sane('name'),
+		"Roll" => sane('number'),
 		"Gender" => sane('gender'),
-		"Program" => sane('prog'),
-		"Dept" => sane('dept'),
-		"BloodGroup" => sane('bg'),
-//		"Category" => sane('cat'),
-		"Country" => sane('country')
+		"Phone" => sane('phone_no'),
+		"Age" => sane('age'),
+		"BloodGroup" => sane('blood_group'),
+                "Address" => sane('address'),
+                "Email" => sane('email'),
+                "Source" => sane('camp_know')
 	       );
 
 // filter out NULL elements
 $input = array_filter($input);
 
-if (sizeof($input) == 0) {
-    echo "[]";
-    exit(0);
-}
-
 // build query
 
-$field = "CampId, Name, Gender, Phone, Age, BloodGroup, Address, Email, Source";
-$value_array = array();
+// $field = "CampId, Name, Gender, Phone, Age, BloodGroup, Address, Email, Source";
+// $value_array = array();
+// $query = "INSER INTO `donor` (".$field.") VALUES (".$values.")";
+// $output = DB::query($query,$input);
 
-$query = "INSER INTO `donor` (".$field.") VALUES (".$values.")";
-
-$output = DB::query($query,$input);
+DB::insert('donor', donor_array);
 
 ?>
+
 <h1>Thank You!</h1>
 
 Congratulations <? echo $Donor; ?>!<br>
