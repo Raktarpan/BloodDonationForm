@@ -5,14 +5,14 @@
 <body>
 	<form action="Blood_donor.php" method="post">
 	    <h1>General Details</h1>
-		Name:<input type="text" name="name"><br>
-		Roll No.(IITK):<input type="number" name="roll_no"><br>
-		Gender: <input type="radio" name="gender" value="male" checked> Male<br>
+		Name:<br><input type="text" name="name"><br>
+		Roll No.(IITK):<br><input type="number" name="roll_no"><br>
+		Gender: <br><input type="radio" name="gender" value="male" checked> Male<br>
                <input type="radio" name="gender" value="female"> Female<br>
                 <input type="radio" name="gender" value="other"> Others<br>
-        Contact No: <input type="number" name="phone_no"><br>
-        Age: <input type="number" name="age" min="15" max="100"><br>
-        Blood Group: <input type="radio" name="blood_group" value="A+" checked>A+<br>
+        Contact No:<br> <input type="number" name="phone_no"><br>
+        Age:<br> <input type="number" name="age" min="15" max="100"><br>
+        Blood Group:<br> <input type="radio" name="blood_group" value="A+" checked>A+<br>
                      <input type="radio" name="blood_group" value="A-" >A-<br>
                      <input type="radio" name="blood_group" value="B+" >B+<br>
                      <input type="radio" name="blood_group" value="B-" >B-<br>
@@ -21,49 +21,87 @@
                      <input type="radio" name="blood_group" value="AB+" >AB+<br>
                      <input type="radio" name="blood_group" value="AB-" >AB-<br>
                      <input type="radio" name="blood_group" value="notsure" >Others/Don't Know<br>
-        Address: <input type="text" name="address"><br>
-        Email Id: <input type="text" name="email"><br>
-        How do you know about this Camp?<input type="radio" name="camp_know" value="1" checked>Posters<br>
+        Address: <br><input type="text" name="address"><br>
+        Email Id: <br><input type="text" name="email"><br>
+        How do you know about this Camp?<br><input type="radio" name="camp_know" value="1" checked>Posters<br>
                                         <input type="radio" name="camp_know" value="2">Mail<br>
                                         <input type="radio" name="camp_know" value="3">Friends<br>
                                         <input type="radio" name="camp_know" value="4">Facebook<br>
                                         <input type="radio" name="camp_know" value="5">Other<br>
 
       <h1>Medical Details</h1>
-      Have you donated blood before? 
+      Have you donated blood before?<br> 
       <input type="radio" name="d_his" value="1" checked> Yes <br>
       <input type="radio" name="d_his" value="2" > No <br>
-      When was the last time you donated? 
-      <input type="text" name="l_don">
-      Did you have any discomfort while donation ?
+      When was the last time you donated?<br> 
+      <input type="text" name="l_don"><br>
+      Did you have any discomfort while donation ?<br>
        <input type="radio" name="discomfort" value="1" checked> Yes<br>
        <input type="radio" name="discomfort" value="2" > No<br>
        <input type="radio" name="discomfort" value="3" checked> N/A<br>
-      Are you feeling well today?
+      Are you feeling well today?<br>
       <input type="radio" name="well" value="1" checked> Yes<br>
       <input type="radio" name="well" value="2" > No<br>
-      Did you sleep well last night?
+      Did you sleep well last night?<br>
       <input type="radio" name="sleep" value="1" checked> Yes<br>
       <input type="radio" name="sleep" value="2" > No<br>
-      Have you had anything to eat in last 4 hours?
+      Have you had anything to eat in last 4 hours?<br>
       <input type="radio" name="eat" value="1" checked> Yes<br>
       <input type="radio" name="eat" value="2" > No<br>
-      Do you have any reason to believe that you are infected with Hepatitis, Malaria,HIV/AIDS , Veneral Disease?
+      Do you have any reason to believe that you are infected with Hepatitis, Malaria,HIV/AIDS , Veneral Disease?<br>
       <input type="radio" name="hiv" value="1" checked> Yes<br>
       <input type="radio" name="hiv" value="2" > No<br>
-      In last six months have you had history of any of the following?
+      In last six months have you had history of any of the following?<br>
       <input type="radio" name="history" value="1" checked> Unexpected Weight Loss<br>
       <input type="radio" name="history" value="2" > Repeated Diarrhea<br>
       <input type="radio" name="history" value="3" > Continous Cold n Cough<br>
       <input type="radio" name="history" value="4" > Continous Low Grade Fever<br>
       <input type="radio" name="history" value="5" > None of the above<br>
-      In last six months have you had any of the following?
+      In last six months have you had any of the following?<br>
       <input type="radio" name="extra_thing" value="1" checked> Tattooing<br>
       <input type="radio" name="extra_thing" value="2" > Ear/Body Piercing<br>
       <input type="radio" name="extra_thing" value="3" > Dental Extraction<br>
       <input type="radio" name="extra_thing" value="4" > Accupuncture<br>
       <input type="radio" name="extra_thing" value="5" > None of the above<br>
-      
+      Do you suffer from any of the following diseases?<br>
+      <input type="radio" name="diseases" value="1" checked> Heart/Lung/Kidney Disease<br>
+      <input type="radio" name="diseases" value="2"> Cancer/Malignant Disease<br>
+      <input type="radio" name="diseases" value="3"> Malaria/Tuberculosis<br>
+      <input type="radio" name="diseases" value="4"> Diabetes<br>
+      <input type="radio" name="diseases" value="5"> Allergic Disease/Jaundice/Hepatitis B-C<br>
+      <input type="radio" name="diseases" value="6"> Abnormal Bleeding Tendency/Fainting Spells<br>
+      <input type="radio" name="diseases" value="7"> None of the above<br>
+      Have you had any of the following in last 72 hours?<br>
+      <input type="radio" name="72_hrs" value="1" checked> Antibiotics/Aspirin/Antiallergy<br>
+      <input type="radio" name="72_hrs" value="2"> Insulins/Steroids/Hormones<br>
+      <input type="radio" name="72_hrs" value="3"> Contraceptive/Immunization pills<br>
+      <input type="radio" name="72_hrs" value="4"> Vaccination / Rabies Vaccine<br>
+      <input type="radio" name="72_hrs" value="5"> Alchohol<br>
+      <input type="radio" name="72_hrs" value="6"> None of the above<br>
+      Have you had any surgery or Blood Transfusion in past six months?<br>
+      <input type="radio" name="surgery" value="1" checked> Major<br>
+      <input type="radio" name="surgery" value="2"> Minor<br>
+      <input type="radio" name="surgery" value="3"> Transplant<br>
+      <input type="radio" name="surgery" value="4"> Transfusion<br>
+      <input type="radio" name="surgery" value="5"> None of the above<br>
+      For Women Donors only<br>
+      <input type="radio" name="wdnr" value="1" checked> You are having Menstruations/Periods<br>
+      <input type="radio" name="wdnr" value="2" > You are pregnant<br>
+      <input type="radio" name="wdnr" value="3" > You have a baby less than of 18 months<br>
+      <input type="radio" name="wdnr" value="4" > You have had an abortion in last three months<br>
+      <input type="radio" name="wdnr" value="5" > None of the above / Not applicable<br>
+      Do you disagree with any of these<br>
+      <input type="radio" name="disagree" value="1" checked> Blood donation is totally voluntary act and no inducement or remuneration has been offered for the same.<br>
+      <input type="radio" name="disagree" value="2"> Donation of blood is a medical procedure and that by donating voluntarily, I accept risks involved.<br>
+      <input type="radio" name="disagree" value="3">My blood will be tested for Hepatitis B and C, malarial parasite, HIV/AIDS and other venereal disease in addition to any other screening to ensure blood safety.<br>
+      <input type="radio" name="disagree" value="4">I prohibit any information provided by me and donation to be discussed with any other individual or government agency without my prior permission.<br>
+      <input type="radio" name="disagree" value="5">No, I agree with all the above points.<br>
+
+
+
+<input type="submit" value="Submit">
+
+
 
 	</form>
 </body>
