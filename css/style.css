@@ -1,1 +1,11 @@
-
+body{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+ 	background-size: cover;
+	font-family: 'Raleway', sans-serif;
+	background-color: rgb(103, 58, 183);
+}
+.form_container{
+	
+}
