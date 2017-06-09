@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+	<title>Blood Donation Form</title>
+</head>
+<body>
+	<form action="Blood_donor.php" method="post">
+	    <h1>General Details</h1>
+		Name:<input type="text" name="name"><br>
+		Roll No.(IITK):<input type="number" name="roll_no"><br>
+		Gender: <input type="radio" name="gender" value="male" checked> Male<br>
+               <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Others<br>
+        Contact No: <input type="number" name="phone_no"><br>
+        Age: <input type="number" name="age" min="15" max="100"><br>
+        Blood Group: <input type="radio" name="blood_group" value="A+" checked>A+<br>
+                     <input type="radio" name="blood_group" value="A-" >A-<br>
+                     <input type="radio" name="blood_group" value="B+" >B+<br>
+                     <input type="radio" name="blood_group" value="B-" >B-<br>
+                     <input type="radio" name="blood_group" value="O+" >O+<br>
+                     <input type="radio" name="blood_group" value="O-" >O-<br>
+                     <input type="radio" name="blood_group" value="AB+" >AB+<br>
+                     <input type="radio" name="blood_group" value="AB-" >AB-<br>
+                     <input type="radio" name="blood_group" value="notsure" >Others/Don't Know<br>
+        Address: <input type="text" name="address"><br>
+        Email Id: <input type="text" name="email"><br>
+        How do you know about this Camp?<input type="radio" name="camp_know" value="1" checked>Posters<br>
+                                        <input type="radio" name="camp_know" value="2">Mail<br>
+                                        <input type="radio" name="camp_know" value="3">Friends<br>
+                                        <input type="radio" name="camp_know" value="4">Facebook<br>
+                                        <input type="radio" name="camp_know" value="5">Other<br>
+
+      <h1>Medical Details</h1>
+      Have you donated blood before? 
+      <input type="radio" name="d_his" value="1" checked> Yes <br>
+      <input type="radio" name="d_his" value="2" > No <br>
+      When was the last time you donated? 
+      <input type="text" name="l_don">
+      Did you have any discomfort while donation ?
+       <input type="radio" name="discomfort" value="1" checked> Yes<br>
+       <input type="radio" name="discomfort" value="2" > No<br>
+       <input type="radio" name="discomfort" value="3" checked> N/A<br>
+      Are you feeling well today?
+      <input type="radio" name="well" value="1" checked> Yes<br>
+      <input type="radio" name="well" value="2" > No<br>
+      Did you sleep well last night?
+      <input type="radio" name="sleep" value="1" checked> Yes<br>
+      <input type="radio" name="sleep" value="2" > No<br>
+      Have you had anything to eat in last 4 hours?
+      <input type="radio" name="eat" value="1" checked> Yes<br>
+      <input type="radio" name="eat" value="2" > No<br>
+      Do you have any reason to believe that you are infected with Hepatitis, Malaria,HIV/AIDS , Veneral Disease?
+      <input type="radio" name="hiv" value="1" checked> Yes<br>
+      <input type="radio" name="hiv" value="2" > No<br>
+      In last six months have you had history of any of the following?
+      <input type="radio" name="history" value="1" checked> Unexpected Weight Loss<br>
+      <input type="radio" name="history" value="2" > Repeated Diarrhea<br>
+      <input type="radio" name="history" value="3" > Continous Cold n Cough<br>
+      <input type="radio" name="history" value="4" > Continous Low Grade Fever<br>
+      <input type="radio" name="history" value="5" > None of the above<br>
+      In last six months have you had any of the following?
+      <input type="radio" name="extra_thing" value="1" checked> Tattooing<br>
+      <input type="radio" name="extra_thing" value="2" > Ear/Body Piercing<br>
+      <input type="radio" name="extra_thing" value="3" > Dental Extraction<br>
+      <input type="radio" name="extra_thing" value="4" > Accupuncture<br>
+      <input type="radio" name="extra_thing" value="5" > None of the above<br>
+      
+
+	</form>
+</body>
