@@ -7,8 +7,9 @@
 
 require_once('meekrodb.2.3.class.php');
 
-DB::$user = ''; // username
-DB::$password = ''; // password
-DB::$dbName = ''; // database name
+DB=$host = '';      // db host
+DB::$user = '';     // db username
+DB::$password = ''; // db password
+DB::$dbName = '';   // database name
 
 ?>
