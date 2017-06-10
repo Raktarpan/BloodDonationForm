@@ -10,8 +10,10 @@
 </head>
 <body >
  <div class="form_container">
-	<form action="Blood_donor.php" method="post" >
-	    <h1 text-align: center;>General Details</h1>
+	<form action="donor.php" method="post" >
+        <input type="hidden" name="cid" value="1">
+        <input type="hidden" name="auth" value="f54e05cab9203e08d86606cb339e853d">
+        <h1 text-align: center;>General Details</h1>
 		<p>Name:<br><input type="text" name="name"><br></p>
 		<p>Roll No.(IITK):<br><input type="number" name="roll_no"><br>
 		<p>Gender: <br><input type="radio" name="gender" value="male" checked> Male<br>
