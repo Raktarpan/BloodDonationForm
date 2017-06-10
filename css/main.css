@@ -3,6 +3,8 @@ body
 	padding: 0;
 	margin: 0;
 	background-color: #ddd;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: large
 }
 header
 {
