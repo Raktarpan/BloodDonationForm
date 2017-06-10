@@ -1,0 +1,48 @@
+body
+{
+  padding: 0;
+  margin: 0;
+  background-color: #ddd;
+  font-family: 'Raleway', sans-serif;
+}
+header
+{
+  background-color: #000;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding-top: 4%
+  top: 0;
+}
+h1{
+  padding-top: 10%;
+  text-align: center;
+}
+.Cong{
+  font-family: 'Raleway', sans-serif;
+  font-size: 180%;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+li{
+  padding-top: 2%;
+  font-size: 110%;
+
+}
+.helpline{
+  font-size: 125%;
+  padding-left: 2%;
+}
+h3{
+  padding-left: 2%;
+
+}
+.footer{
+  font-size: 150%;
+  padding-left: 2%;
+}
