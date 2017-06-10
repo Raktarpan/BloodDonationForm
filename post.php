@@ -28,7 +28,7 @@ $donor_array = array (
 	       );
 
 // filter out NULL elements
-$input = array_filter($input);
+// $input = array_filter($donor_array);
 
 // build query
 
@@ -37,13 +37,13 @@ $input = array_filter($input);
 // $query = "INSER INTO `donor` (".$field.") VALUES (".$values.")";
 // $output = DB::query($query,$input);
 
-DB::insert('donor', donor_array);
+DB::insert('donor', $donor_array);
 
 ?>
 
 <h1>Thank You!</h1>
 
-Congratulations <? echo $Donor; ?>!<br>
+Congratulations <? echo $donor_array["Name"]; ?>!<br>
 You are about to save three lives!<br>
 
 <hr>
@@ -72,5 +72,5 @@ We run a 24x7 helpline to provide blood to the needy. If you or your friends are
 
 <hr>
 
-<a href="http://students.iitk.ac.in/raktarpan/camp/donate.php">Form</a>
+<a href="form.html">Form</a>
 
