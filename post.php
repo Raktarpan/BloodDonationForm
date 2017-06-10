@@ -14,6 +14,14 @@ if (! in_array(sane('auth'), $safety)) {
     die('<title>Denied</title><h1>Unauthorized Access</h1>');
 }
 
+$question_array = array();
+
+for($i = 1; $i < 15; $i++) {
+    array_push($question_array, "Q".$i."-". sane('q'.$i));
+}
+
+$question_answers = implode($question_array, ", ");
+
 $donor_array = array ( 
 		"CampId" => sane('cid'),
                 "Name" => sane('name'),
@@ -24,18 +32,9 @@ $donor_array = array (
 		"BloodGroup" => sane('blood_group'),
                 "Address" => sane('address'),
                 "Email" => sane('email'),
-                "Source" => sane('camp_know')
+                "Source" => sane('camp_know'),
+                "Medical" => $question_answers,
 	       );
-
-// filter out NULL elements
-// $input = array_filter($donor_array);
-
-// build query
-
-// $field = "CampId, Name, Gender, Phone, Age, BloodGroup, Address, Email, Source";
-// $value_array = array();
-// $query = "INSER INTO `donor` (".$field.") VALUES (".$values.")";
-// $output = DB::query($query,$input);
 
 DB::insert('donor', $donor_array);
 
