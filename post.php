@@ -1,4 +1,7 @@
-<title>Thank You!</title>
+<head>
+    <title>Thank You!</title>
+    <link href="css/submit.css" rel='stylesheet' type='text/css'>
+</head>
 <?php
 
 require_once('config.php');
@@ -39,7 +42,8 @@ $donor_array = array (
 DB::insert('donor', $donor_array);
 
 ?>
-
+<body>
+<div class="content">
 <h1>Thank You!</h1>
 
 Congratulations <? echo $donor_array["Name"]; ?>!<br>
@@ -65,11 +69,12 @@ You are about to save three lives!<br>
 
 We run a 24x7 helpline to provide blood to the needy. If you or your friends are ever in need of blood, feel free to call on this and we will try our best to help you out.
 
-<h4>+91 8882 982 982</h4>
+<h3>+91 8882 982 982</h3>
 
 ~ Raktarpan Team
 
-<hr>
-
-<a href="form.html">Form</a>
-
+    <div class="footer">
+        <a href="form.html">Form</a>
+    </div>
+</div>
+</body>
