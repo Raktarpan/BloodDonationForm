@@ -43,11 +43,13 @@ DB::insert('donor', $donor_array);
 
 ?>
 <body>
-<div class="content">
+ <header>
+    <center><img src="images/rakt.png" width="15%" height="15%"></center>
+  </header>
 <h1>Thank You!</h1>
 
-Congratulations <? echo $donor_array["Name"]; ?>!<br>
-You are about to save three lives!<br>
+<div class = "Cong">Congratulations <? echo $donor_array["Name"]; ?>!<br>
+	You are about to save three lives!<br></div>
 
 <hr>
 
@@ -71,10 +73,9 @@ We run a 24x7 helpline to provide blood to the needy. If you or your friends are
 
 <h3>+91 8882 982 982</h3>
 
-~ Raktarpan Team
+	<h3>~ Raktarpan Team</h3>
 
     <div class="footer">
         <a href="form.html">Form</a>
-    </div>
-</div>
+	</div>
 </body>
