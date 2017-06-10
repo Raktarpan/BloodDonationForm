@@ -8,6 +8,7 @@ body
 }
 header
 {
+	/*background: linear-gradient(black, gray);*/
 	background-color: #000;
 	padding-top: 1%;
 	padding-bottom: 1%;
