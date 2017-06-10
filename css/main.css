@@ -26,10 +26,14 @@ header
 {
   margin-top: 100px;
 }*/
-.form1
+.form
 {
 	padding-top: 1%;
 	/*border-style: solid*/
+}
+input
+{
+	margin-top: 1em;
 }
 input[type=text]
 {
@@ -40,7 +44,7 @@ input[type=number]
 {
     border: none;
     border-bottom: 2px solid;
-    -moz-appearance: textfield
+    -moz-appearance: textfield;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button
@@ -69,4 +73,17 @@ hr {
     border-style: inset;
     border-width: 2px;
     color: #ddd
+}
+.tabw_80
+{
+	width: 80%;
+}
+
+.tabw_100
+{
+	width: 100%;
+}
+.submit_button
+{
+	text-align: center;	
 }
