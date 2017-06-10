@@ -1,6 +1,6 @@
 body
 {
-	padding: 0;
+	padding-top: 100px;
 	margin: 0;
 	background-color: #ddd;
 	font-family: Verdana, Geneva, sans-serif;
@@ -23,7 +23,11 @@ header
 	width: 60%;
 	margin: auto;
 	padding: 1%;
-	margin-top: 120px;
+	/*margin-top: 120px;*/
+}
+.header_image
+{
+    max-width: 15%;
 }
 /*#content
 {
@@ -79,14 +83,13 @@ hr {
 }
 .tabw_80
 {
-	width: 80%;
+    width: 80%;
 }
-
 .tabw_100
 {
-	width: 100%;
+    width: 100%;
 }
 .submit_button
 {
-	text-align: center;	
+    text-align: center;
 }

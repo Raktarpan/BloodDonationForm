@@ -29,6 +29,7 @@ CREATE TABLE donor (
 	Age INT,
 	BloodGroup VARCHAR(7),
 	Address VARCHAR(100),
+        Hostel VARCHAR(20),
 	Email VARCHAR(50),
 	Source VARCHAR(20),
 	BloodPressure VARCHAR(20),
