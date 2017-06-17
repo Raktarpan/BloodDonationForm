@@ -31,7 +31,7 @@ hr
 {
     color: #cacaca;
     background-color: #cacaca;
-    width: 85%;
+    width: 90%;
 }
 h1{
   text-align: center;
@@ -40,6 +40,7 @@ h1{
 /*  font-family: Raleway', sans-serif;*/
   font-size: 135%;
   text-align: center;
+  padding-bottom: 5px;
 }
 h2{
   text-align: center;
@@ -58,8 +59,9 @@ h3{
   padding-left: 2%;
 
 }
-.footer{
+.footer 
+{
+  text-align: center;
   font-size: 150%;
-  padding-left: 2%;
 }
 

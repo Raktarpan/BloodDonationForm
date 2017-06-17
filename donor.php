@@ -1,18 +1,24 @@
 <?php
 
-require_once('config.php');
+$CampDir = ".";
+require_once($CampDir . '/config.php');
+require_once($CampDir . '/settings.php');
 
 function sane($var) {
     return (isset($_REQUEST[$var]) ? (($_REQUEST[$var] != "") ? $_REQUEST[$var] : NULL) : NULL); 
 }
 
-$salt = "Raktarpan";
-$safety = array(md5($salt.'Hrishikesh'), md5($salt.'BloodDonationCamp'), md5($salt.'Shubhangi'));
+function authorize() {
+    $salt = "Raktarpan";
+    $safety = array(md5($salt.'Hrishikesh'), md5($salt.'BloodDonationCamp'), md5($salt.'Shubhangi'));
 
-/* if (! in_array(sane('auth'), $safety)) {
-    die('<title>Denied</title><h1>Unauthorized Access</h1>');
+
+    if (! in_array(sane('auth'), $safety)) {
+        die('<title>Denied</title><h1>Unauthorized Access</h1>');
+    }
+
 }
- 
+
 $question_array = array();
 
 for($i = 1; $i < 15; $i++) {
@@ -26,47 +32,45 @@ $room = sane('room');
 $address = sane('address');
 
 if ($hostel != "NA") {
-	$address = $room." / ".$hostel;
+    $address = $room." / ".$hostel;
 }
 
 
 $donor_array = array ( 
-		"CampId" => sane('cid'),
-                "Name" => sane('name'),
-		"Roll" => sane('number'),
-		"Gender" => sane('gender'),
-		"Phone" => sane('phone_no'),
-		"Age" => sane('age'),
-		"BloodGroup" => sane('blood_group'),
-                "Address" => $address,
-                "Hostel" => $hostel,
-                "Email" => sane('email'),
-                "Source" => sane('camp_know'),
-                "Medical" => $question_answers,
-	       );
+    //		"CampId" => sane('cid'),
+    "CampId" => $CampId,
+    "Name" => sane('name'),
+    "Roll" => sane('number'),
+    "Gender" => sane('gender'),
+    "Phone" => sane('phone_no'),
+    "Age" => sane('age'),
+    "BloodGroup" => sane('blood_group'),
+    "Address" => $address,
+    "Hostel" => $hostel,
+    "Email" => sane('email'),
+    "Source" => sane('camp_know'),
+    "Medical" => $question_answers,
+);
 
 DB::insert('donor', $donor_array);
- */
 ?>
 <head>
     <title>Thank You!</title>
-    <link href="css/submit.css" rel='stylesheet' type='text/css'>
+    <link href="<? echo $CampDir; ?>/css/submit.css" rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Lobster|Pacifico:400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500italic,500' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,500,600,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
  <header>
-    <center><img class="header_image" src="images/rakt.png"></center>
+ <center><img class="header_image" src="<? echo $CampDir; ?>/images/rakt.png"></center>
   </header>
 <div class="content">
-<h1>Thank You!</h1>
-
-<div class="congrats">Congratulations <? // echo $donor_array["Name"]; ?>!<br>
-	You are about to save <b>three</b> lives!<br></div>
-
+<h1>Congratulations <? echo $donor_array["Name"]; ?>!</h1>
+<div class="congrats">
+        You are about to save <b>three</b> lives!<br>
+</div>
 <hr>
-
 <h2>Procedure</h2>
 <ol>
     <li>Please write your Name and Mobile Number on the paper form.</li>
@@ -93,7 +97,7 @@ DB::insert('donor', $donor_array);
 <hr>
 
     <div class="footer">
-        <a href="form">Form</a> | <a href="../live">Live Statistics</a>
+    <a href="<? echo $CampDir; ?>">Form</a> | <a href="<? echo $CampDir; ?>/live">Live Statistics</a>
     </div>
 </div>
 </body>
