@@ -14,8 +14,8 @@ td
 .editbox
 {
     font-size:14px;
-/*    width:100px; */
-    background-color: #ffe;
+    width: 70px;
+    background-color: #ffffef;
     border:solid 1px #000;
     padding:4px;
 }
@@ -25,6 +25,6 @@ td
 }
 .edit_tr:hover
 {
-    background:url(images/edit.png) right no-repeat #80C8E5;
+    background:url(images/edit.png) right no-repeat #D2E2F2; /* #80C8E5; */
     cursor:pointer;
 }

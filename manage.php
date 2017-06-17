@@ -122,7 +122,7 @@ $(document).ready(function() {
         var dataString = 'Id=' + ID + '&BloodPressure=' + BloodPressure + '&Hb=' + Hb + '&Weight=' + Weight + '&Pulse=' + Pulse + '&Fit=' + Fit + '&Emergency=' + Emergency + '&CampRating=' + CampRating;
 
         // Loading Image
-        // $("#" + ID).html('<img src="images/loading.gif" />');
+        // $("#" + ID).html('<img src="<? echo $CampDir; ?>/images/loading.gif" />');
 
         // alert(dataString);
         $.ajax({
@@ -131,6 +131,7 @@ $(document).ready(function() {
             data: dataString,
             cache: false,
             success: function(html) {
+                alert("Success");
                 $("#BloodPressure_" + ID).html(BloodPressure);
                 $("#Hb_" + ID).html(Hb);
                 $("#Weight_" + ID).html(Weight);
