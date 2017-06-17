@@ -4,7 +4,7 @@ $CampDir = ".";
 require_once($CampDir . '/config.php');
 require_once($CampDir . '/settings.php');
 
-function sane($var) {
+function get_input($var) {
     return (isset($_REQUEST[$var]) ? (($_REQUEST[$var] != "") ? $_REQUEST[$var] : NULL) : NULL); 
 }
 
@@ -13,7 +13,7 @@ function authorize() {
     $safety = array(md5($salt.'Hrishikesh'), md5($salt.'BloodDonationCamp'), md5($salt.'Shubhangi'));
 
 
-    if (! in_array(sane('auth'), $safety)) {
+    if (! in_array(get_input('auth'), $safety)) {
         die('<title>Denied</title><h1>Unauthorized Access</h1>');
     }
 
@@ -22,14 +22,14 @@ function authorize() {
 $question_array = array();
 
 for($i = 1; $i < 15; $i++) {
-    array_push($question_array, "Q".$i."-". sane('q'.$i));
+    array_push($question_array, "Q".$i."-". get_input('q'.$i));
 }
 
 $question_answers = implode($question_array, ", ");
 
-$hostel = sane('hostel');
-$room = sane('room');
-$address = sane('address');
+$hostel = get_input('hostel');
+$room = get_input('room');
+$address = get_input('address');
 
 if ($hostel != "NA") {
     $address = $room." / ".$hostel;
@@ -37,18 +37,18 @@ if ($hostel != "NA") {
 
 
 $donor_array = array ( 
-    //		"CampId" => sane('cid'),
+    //		"CampId" => get_input('cid'),
     "CampId" => $CampId,
-    "Name" => sane('name'),
-    "Roll" => sane('number'),
-    "Gender" => sane('gender'),
-    "Phone" => sane('phone_no'),
-    "Age" => sane('age'),
-    "BloodGroup" => sane('blood_group'),
+    "Name" => get_input('name'),
+    "Roll" => get_input('number'),
+    "Gender" => get_input('gender'),
+    "Phone" => get_input('phone_no'),
+    "Age" => get_input('age'),
+    "BloodGroup" => get_input('blood_group'),
     "Address" => $address,
     "Hostel" => $hostel,
-    "Email" => sane('email'),
-    "Source" => sane('camp_know'),
+    "Email" => get_input('email'),
+    "Source" => get_input('camp_know'),
     "Medical" => $question_answers,
 );
 

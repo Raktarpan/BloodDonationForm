@@ -1,0 +1,30 @@
+body
+{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:14px;
+}
+.editbox, .editcheckbox
+{
+    display:none
+}
+td
+{
+    padding:5px;
+}
+.editbox
+{
+    font-size:14px;
+/*    width:100px; */
+    background-color: #ffe;
+    border:solid 1px #000;
+    padding:4px;
+}
+.editcheckbox {
+    height: 25px;
+    width: 25px;
+}
+.edit_tr:hover
+{
+    background:url(images/edit.png) right no-repeat #80C8E5;
+    cursor:pointer;
+}
