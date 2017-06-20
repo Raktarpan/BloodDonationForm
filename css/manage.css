@@ -25,6 +25,7 @@ td
 }
 .edit_tr:hover
 {
-    background:url(images/edit.png) right no-repeat #D2E2F2; /* #80C8E5; */
+    /* background:url(images/edit.png) right no-repeat #D2E2F2; /* #80C8E5; */
+    background: #D2E2F2; /* #80C8E5; */
     cursor:pointer;
 }

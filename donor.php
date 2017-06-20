@@ -56,17 +56,17 @@ DB::insert('donor', $donor_array);
 ?>
 <head>
     <title>Thank You!</title>
-    <link href="<? echo $CampDir; ?>/css/submit.css" rel='stylesheet' type='text/css'>
+    <link href="<?php echo $CampDir; ?>/css/submit.css" rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Lobster|Pacifico:400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500italic,500' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,500,600,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
  <header>
- <center><img class="header_image" src="<? echo $CampDir; ?>/images/rakt.png"></center>
+ <center><img class="header_image" src="<?php echo $CampDir; ?>/images/rakt.png"></center>
   </header>
 <div class="content">
-<h1>Congratulations <? echo $donor_array["Name"]; ?>!</h1>
+<h1>Congratulations <?php echo $donor_array["Name"]; ?>!</h1>
 <div class="congrats">
         You are about to save <b>three</b> lives!<br>
 </div>
@@ -97,7 +97,7 @@ DB::insert('donor', $donor_array);
 <hr>
 
     <div class="footer">
-    <a href="<? echo $CampDir; ?>">Form</a> | <a href="<? echo $CampDir; ?>/live">Live Statistics</a>
+    <a href="<?php echo $CampDir; ?>">Form</a> | <a href="<? echo $CampDir; ?>/live">Live Statistics</a>
     </div>
 </div>
 </body>

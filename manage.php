@@ -88,7 +88,7 @@ $Table .= "</table>";
 ?>
 <head>
 <title>&bull; Raktarpan &bull; Manage Donor Details &bull;</title>
-<link type="text/css" rel="stylesheet" href="<? echo $CampDir; ?>/css/manage.css" />
+<link type="text/css" rel="stylesheet" href="<?php echo $CampDir; ?>/css/manage.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -122,7 +122,7 @@ $(document).ready(function() {
         var dataString = 'Id=' + ID + '&BloodPressure=' + BloodPressure + '&Hb=' + Hb + '&Weight=' + Weight + '&Pulse=' + Pulse + '&Fit=' + Fit + '&Emergency=' + Emergency + '&CampRating=' + CampRating;
 
         // Loading Image
-        // $("#" + ID).html('<img src="<? echo $CampDir; ?>/images/loading.gif" />');
+        // $("#" + ID).html('<img src="<?php echo $CampDir; ?>/images/loading.gif" />');
 
         // alert(dataString);
         $.ajax({

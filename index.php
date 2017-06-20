@@ -7,7 +7,7 @@ require_once($CampDir . '/settings.php');
 <!DOCTYPE html>
 <head>
    <title>Blood Donation Form</title>
-   <link href='<? echo $CampDir; ?>/css/main.css' rel='stylesheet' type='text/css' />
+   <link href='<?php echo $CampDir; ?>/css/main.css' rel='stylesheet' type='text/css' />
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href='http://fonts.googleapis.com/css?family=Lobster|Pacifico:400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500italic,500' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,500,600,700,300' rel='stylesheet' type='text/css'>
@@ -24,12 +24,12 @@ require_once($CampDir . '/settings.php');
 </head>
 <body>
    <header>
-   <center><img class="header_image" src="<? echo $CampDir; ?>/images/rakt.png"></center>
+   <center><img class="header_image" src="<?php echo $CampDir; ?>/images/rakt.png"></center>
    </header>
    <div class="form_container" id="content">
       <form action="donor.php" method="post">
-      <!-- input type="hidden" name="cid" value="<? // echo $CampId; ?>" -->
-      <!-- input type="hidden" name="auth" value="<? // echo $CampAuth; ?>" -->
+      <!-- input type="hidden" name="cid" value="<?php // echo $CampId; ?>" -->
+      <!-- input type="hidden" name="auth" value="<?php // echo $CampAuth; ?>" -->
          <div class="form">
             <h1 style="text-align: center;">General Details</h1>
             <ol>
@@ -234,7 +234,7 @@ require_once($CampDir . '/settings.php');
                   <label><input type="radio" name="q14" value="5" checked>No, I agree with all the above points.</label><br></p>
             </ol>
          </div>
-         <div class="submit_button"><input type="image" src="<? echo $CampDir; ?>/images/button.png" alt="Submit"></div>
+         <div class="submit_button"><input type="image" src="<?php echo $CampDir; ?>/images/button.png" alt="Submit"></div>
       </form>
    </div>
 </body>
