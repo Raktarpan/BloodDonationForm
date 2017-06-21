@@ -167,7 +167,7 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
-<?
+<?php
 
 echo $Table;
 
