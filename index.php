@@ -106,11 +106,11 @@ require_once($CampDir . '/settings.php');
                   How do you know about this Camp?
                   <table class="tabw_80">
                      <tr>
-                        <td><label><input type="radio" name="camp_know" value="Posters" required> Posters</label></td>
-                        <td><label><input type="radio" name="camp_know" value="Mail"> Mail</label></td>
-                        <td><label><input type="radio" name="camp_know" value="Friends"> Friends</label></td>
-                        <td><label><input type="radio" name="camp_know" value="Facebook"> Facebook</label></td>
-                        <td><label><input type="radio" name="camp_know" value="Other"> Other</label></td>
+                        <td><label><input type="radio" name="source" value="Posters" required> Posters</label></td>
+                        <td><label><input type="radio" name="source" value="Mail"> Mail</label></td>
+                        <td><label><input type="radio" name="source" value="Friends"> Friends</label></td>
+                        <td><label><input type="radio" name="source" value="Facebook"> Facebook</label></td>
+                        <td><label><input type="radio" name="source" value="Other"> Other</label></td>
                      </tr>
                   </table>
             </ol>

@@ -48,11 +48,11 @@ $donor_array = array (
     "Address" => $address,
     "Hostel" => $hostel,
     "Email" => get_input('email'),
-    "Source" => get_input('camp_know'),
+    "Source" => get_input('source'),
     "Medical" => $question_answers,
 );
 
-DB::insert('donor', $donor_array);
+// DB::insert('donor', $donor_array);
 ?>
 <head>
     <title>Thank You!</title>

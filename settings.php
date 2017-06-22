@@ -2,6 +2,6 @@
 
 /* Camp Settings */
 
-$CampId = 1;
+$CampId = 2;
 
 ?>
